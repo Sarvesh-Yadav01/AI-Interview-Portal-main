@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: ai-interview-portal
+    runtime: node
+    plan: free
+    region: singapore
+    buildCommand: npm install && cd client && npm install && npm run build
+    startCommand: node backend/app.js
+    envVars:
+      - key: NODE_ENV
+        value: production
