@@ -12,6 +12,7 @@
     "client": "cd client && npm run dev",
     "dev": "concurrently -n \"BACKEND,CLIENT\" -c \"cyan,magenta\" \"npm run backend\" \"npm run client\"",
     "build": "cd client && npm install && npm run build",
+    "push": "git add -A && git commit -m \"update project\" && git push origin main",
     "prod": "node backend/app.js"
   },
   "keywords": [
