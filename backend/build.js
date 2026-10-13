@@ -15,3 +15,4 @@ console.log("=== Building React client at:", clientDir, "===");
 execSync("npm install", { cwd: clientDir, stdio: "inherit" });
 execSync("npm run build", { cwd: clientDir, stdio: "inherit" });
 console.log("=== React client build finished successfully! ===");
+
