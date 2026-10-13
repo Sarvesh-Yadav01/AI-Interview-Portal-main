@@ -211,7 +211,7 @@ function getModelName() {
   }
   const key = String(process.env.OPENAI_API_KEY || "").trim();
   if (key.startsWith("gsk_")) {
-    return "llama-3.3-70b-versatile";
+    return "openai/gpt-oss-120b";
   }
   if (key.startsWith("AIzaSy")) {
     return "gemini-1.5-flash";
